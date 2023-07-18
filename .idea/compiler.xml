@@ -2,13 +2,22 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="030201-adapter" />
         <module name="010304-channelPipeline" />
+        <module name="010304-function" />
+        <module name="echo-client-1" />
+        <module name="echo-server-1" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="echo-client" target="1.7" />
+      <module name="echo-server" target="8" />
+      <module name="Server" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
