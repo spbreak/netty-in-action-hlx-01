@@ -17,3 +17,5 @@ CPU指令
 ![image](./file/image/05010104.png)
 Linux体系结构
 ![image](./file/image/05010105.png)
+直接缓冲区和非直接缓冲区
+![image](./file/image/05010106.png)
