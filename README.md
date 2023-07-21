@@ -19,3 +19,8 @@ Linux体系结构
 ![image](./file/image/05010105.png)
 直接缓冲区和非直接缓冲区
 ![image](./file/image/05010106.png)
+ByteBuf的三种使用模式
+1. 堆内存(非直接缓冲区)
+2. 堆外内存(直接缓冲区)
+3. 复合缓冲区
+![image](./file/image/05010107.png)
