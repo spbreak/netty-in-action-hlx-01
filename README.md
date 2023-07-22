@@ -24,3 +24,8 @@ ByteBuf的三种使用模式
 2. 堆外内存(直接缓冲区)
 3. 复合缓冲区
 ![image](./file/image/05010107.png)
+Java的ByteBuffer(流InputStream)单索引 
+Netty的ByteBuf双索引
+![image](./file/image/05030102.png)
+Netty的discardReadByte与clear区别(clear并不会直接清空数据)
+![image](./file/image/05030101.png)
