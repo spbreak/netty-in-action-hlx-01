@@ -37,3 +37,44 @@ Netty的ByteBuf双索引
 #### set/get
     get() 和 set() 操作, 从给定的索引开始, 并且保持索引不变
     read() 和 write() 操作, 从给定的索引开始, 并且会根据已经访问过的字节数对索引进行调整
+
+#### Channel 生命周期
+![image](./file/image/06010101.png)
+
+#### ChannelHandler 生命周期
+![image](./file/image/06010102.png)
+
+    在 ChannelHandler 被添加到 ChannelPipeline 中或者被从 ChannelPipeline 中移除时会调用这些操作
+    当某个 ChannelInboundHandler 的实现重写 channelRead() 方法时,
+    它将负责显式地释放与池化的 ByteBuf 实例相关的内存
+    -- ReferenceCountUtil.release()
+    SimpleChannelInboundHandler 会自动释放资源
+    所以不应该存储指向任何消息的引用供将来使用, 因为这些引用都将会失效
+### 资源管理
+    class ResourceLeakDetector : 诊断潜在的 (资源泄漏) 问题
+泄漏检测级别
+![image](./file/image/06010103.png)
+
+    修改netty泄漏检测级别
+    java -Dio.netty.leakDetectionLevel=ADVANCED
+
+### 出站方向释放资源
+![image](./file/image/06010104.png)
+
+### 修改ChannelPipeline
+![image](./file/image/06010105.png)
+
+###  Channel/ChannelPipeline/ChannelHandler以及ChannelHandlerContext之间关系
+![image](./file/image/06010106.png)
+
+###  通过 Channel 或者 ChannelPipeline 进行的事件传播
+![image](./file/image/06010107.png)
+
+###  通过 ChannelHandlerContext 触发的操作的事件流
+![image](./file/image/06010108.png)
+
+###  处理入站异常
+![image](./file/image/06010109.png)
+
+###  处理出站异常
+![image](./file/image/06010110.png)
