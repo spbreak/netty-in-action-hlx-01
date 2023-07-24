@@ -78,3 +78,22 @@ Netty的ByteBuf双索引
 
 ###  处理出站异常
 ![image](./file/image/06010110.png)
+
+###  基本的线程池化模型
+![image](./file/image/070201.png)
+```
+虽然池化和重用线程相对于简单地为每个任务都创建和销毁线程是一种进步,
+但是它并不能消除由上下文切换所带来的开销, 其将随着线程数量的增加很快变得明显,
+并且在高负载下愈演愈烈
+```
+###  Netty Reactor 线程模型
+![image](./file/image/070202.png)
+
+###  Netty EventLoop 实现原理
+![image](./file/image/070203.png)
+
+###  Netty EventLoop 事件处理机制
+![image](./file/image/070204.png)
+
+###  Netty EventLoopGroup
+![image](./file/image/070205.png)
