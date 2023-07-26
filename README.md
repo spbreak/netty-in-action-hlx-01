@@ -97,3 +97,24 @@ Netty的ByteBuf双索引
 
 ###  Netty EventLoopGroup
 ![image](./file/image/070205.png)
+
+###  JDK 的任务调度API
+![image](./file/image/070301.png)
+
+###  使用 ScheduledExecutorService 在 60 秒的延迟之后执行一个任务
+![image](./file/image/070302.png)
+
+###  使用 EventLoop 调度任务
+![image](./file/image/070303.png)
+
+###  使用 ScheduledFuture 取消任务
+![image](./file/image/070304.png)
+
+###  EventLoop 的执行逻辑
+![image](./file/image/070305.png)
+
+###  非阻塞传输(如NIO和AIO)的EventLoop分配方式
+![image](./file/image/070306.png)
+
+###  阻塞传输(如OIO)的EventLoop分配方式
+![image](./file/image/070307.png)
