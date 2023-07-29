@@ -118,3 +118,21 @@ Netty的ByteBuf双索引
 
 ###  阻塞传输(如OIO)的EventLoop分配方式
 ![image](./file/image/070307.png)
+
+###  Netty 的 Bootstrap 引导类 引导客户端
+![image](./file/image/080101.png)
+
+###  Netty 的 Bootstrap 引导类 引导服务端
+![image](./file/image/080102.png)
+
+###  不同 Channel 间共享 EventLoop
+![image](./file/image/080103.png)
+
+###  Netty 的Channel和属性
+![image](./file/image/080104.png)
+
+###  Netty 的 关闭释放资源
+![image](./file/image/080105.png)
+
+###  sync与syncUninterruptibly
+![image](./file/image/080106.png)
