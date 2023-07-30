@@ -136,3 +136,6 @@ Netty的ByteBuf双索引
 
 ###  sync与syncUninterruptibly
 ![image](./file/image/080106.png)
+
+###  Netty 的 EmbeddedChannel
+![image](./file/image/090101.png)
