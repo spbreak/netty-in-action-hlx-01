@@ -139,3 +139,17 @@ Netty的ByteBuf双索引
 
 ###  Netty 的 EmbeddedChannel
 ![image](./file/image/090101.png)
+
+###  SSL/TLS 保护加密
+![image](./file/image/110101.png)
+
+###  HTTP 解码器/编码器和编解码器
+![image](./file/image/110102.png)
+
+![image](./file/image/110103.png)
+
+###  WebSocket
+![image](./file/image/110104.png)
+
+###  空闲的连接和超时
+![image](./file/image/110105.png)
